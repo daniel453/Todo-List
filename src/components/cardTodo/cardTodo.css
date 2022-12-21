@@ -1,0 +1,74 @@
+.cardTodo {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  min-height: 75px;
+  gap: 15px;
+  padding: 10px;
+  border: 2px solid #d4dae6;
+  border-radius: 10px;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+.cardTodo:hover {
+  background-color: rgb(215, 220, 227);
+}
+
+.cardTodo__header {
+  display: flex;
+  align-items: center;
+}
+
+.cardTodo__importance {
+  text-align: end;
+  font-size: 1rem;
+  font-weight: bolder;
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+.cardTodo__importance.Low {
+  background-color: rgb(224, 242, 254);
+  color: rgb(14, 182, 241)
+}
+
+.cardTodo__importance.Medium {
+  background-color: rgb(248, 240, 199);
+  color: rgb(246, 207, 12);
+}
+
+.cardTodo__importance.Hight {
+  background-color: rgb(248, 210, 210);
+  color: rgb(249, 51, 51);
+}
+
+.cardTodo__info__p {
+  font-weight: bold;
+  max-width: 70%;
+}
+
+.cardTodo__info {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.card__info__complete {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #98b0d7;
+  cursor: pointer;
+  transition: color .2s ease-in-out;
+}
+
+.card__info__complete:hover {
+  color: #216ef4;
+}
+
+.cardIcon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  cursor: pointer;
+}
