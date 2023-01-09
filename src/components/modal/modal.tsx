@@ -25,10 +25,8 @@ export const Modal:FunctionComponent<propsModal> = (props) => {
 
         <div className='modal__main'>
           { props.children }
-        </div>
-
-        <div className='modal_footer'>
-        { props.btns_footer() }
+          <br />
+          { props.btns_footer() }
         </div>
       </div>
     </div>
